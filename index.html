@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Concealed Gun</title>
+    <link rel="icon" type="image/png" href="https://pratulsrinivasan.github.io/nerv/icon.png" />
+    <link rel="stylesheet" href="./NeRV_files/font-awesome.min.css" />
+    <link rel="stylesheet" href="./NeRV_files/codemirror.min.css" />
+    <link rel="stylesheet" href="./NeRV_files/app.css" />
+    <link rel="stylesheet" href="./NeRV_files/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                Detecting Human with Concealed Gun by Learning <br />
+                from YouTube's CCTV Videos <br />
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.linkedin.com/in/yupapornwanna">
+                            Yupaporn Wanna
+                        </a>
+                        <br />Research Assistant
+                    </li>
+                    <li>
+                        <a> Pimonpun Chachomphon </a>
+                        <br />....
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/haemwaan-sivaraks-22434a13b/">
+                            Haemwaan Sivarakst
+                        </a>
+                        <br />..KTB..
+                    </li>
+                    <li>
+                        <a href="https://vi-lab-th.github.io/"> Thanapong Intharah </a>
+                        <br />Lecturer
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://drive.google.com/file/d/1DaDknW_-vSuzouiCgrSW_QjrJGWEsiTb/view?usp=sharing">
+                            <img src="./NeRV_files/report.JPG" height="120px" /><br />
+                            <h4><strong>Report</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=XcfcuMSpp90&feature=youtu.be">
+                            <img src="./NeRV_files/youtube_icon_dark.png" height="120px" /><br />
+                            <h4><strong>Presentation Video</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Peckkie/Concealed-Gun-Detector">
+                            <img src="./NeRV_files/github_pad.png" height="120px" /><br />
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Example Results: Webpage(Prototype)</h3>
+                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                    <source src="./NeRV_files/Gun.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Abstract</h3>
+                <img src="./NeRV_files/Capture2.JPG" class="img-responsive" alt="overview" /><br />
+                <p class="text-justify">
+                    &emsp;&emsp;&emsp;Nowadays, there are a lot of efforts to use
+                    intelligent algorithms to detect gun related incidents in CCTV.
+                    However, this approach cannot prevent the gun incidents before they
+                    happen. So, we present here an algorithm and the system which can
+                    detect people with concealed gun in order to early alarm before the
+                    incident happens.
+                    <br />&emsp;&emsp;&emsp;We develop the algorithm by first collecting
+                    videos of gun incidents from YouTube.com. We then prepare the
+                    dataset by dividing a video into 2 parts: the concealed gun part and
+                    the label part. After that, we use PoseFlow to track individual and
+                    train different learning algorithms on the dataset. The experiment
+                    shows that Random Forest outperforms Support Vector Machine,
+                    Decision Tree, Logistic Regression by having 77%, Accuracy, 76%
+                    Recall, 63% Precision and 69% F1-Score. <br />&emsp;&emsp;&emsp;For
+                    the system we develop API which detects concealed gun based on
+                    Random Forest algorithm. In order to demonstrate and debug the
+                    system, we also develop the Web Application that take a video as an
+                    input and output probabilities of having concealed gun for all
+                    people in the video. Moreover, when a subject with concealed gun is
+                    detected, the system sends Line notification to the pre-configured
+                    user.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Presentation Video for Prime Minister's Digital Award 2020</h3>
+                <div class="text-center">
+                    <div style="position: relative">
+                        <iframe align="center" width="100%" height="422"
+                            src="https://www.youtube-nocookie.com/embed/SznOiUYxk_4" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Acknowledgements</h3>
+                Our implementation is based on
+                <a href="https://github.com/google-research/google-research/tree/master/jaxnerf">Boyang Deng's awesome
+                    JAX implementation of NeRF</a>.
+                <br />
+                The website template was borrowed from
+                <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
