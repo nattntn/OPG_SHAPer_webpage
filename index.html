@@ -6,12 +6,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detecting Concealed Gun</title>
-    <link rel="icon" type="image/png" href="./NeRV_files/gun_1.png" />
+    <title>OPG SHAPer</title>
+    <link rel="icon" type="image/png" href="./NeRV_files/logo1.svg" />
     <link rel="stylesheet" href="./NeRV_files/font-awesome.min.css" />
     <link rel="stylesheet" href="./NeRV_files/codemirror.min.css" />
     <link rel="stylesheet" href="./NeRV_files/app.css" />
     <link rel="stylesheet" href="./NeRV_files/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
@@ -37,26 +38,26 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                Detecting Human with Concealed Gun by Learning <br />
-                from YouTube's CCTV Videos <br />
+                OPG-SHAPer: Dental Platform for Explainble AI and New Dental Knowledge Discovery
+                via Machine Learning Techniques<br />
             </h1>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://www.linkedin.com/in/yupapornwanna">
-                            Yupaporn Wanna
+                        <a href="https://github.com/nattntn">
+                            Natthanich Hirunchavarod
                         </a>
                     </li>
-                    <li>
-                        <a> Pimonpun Chachomphon </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/haemwaan-sivaraks-22434a13b/">
-                            Haemwaan Sivarakst
+                    <!--li>
+                        <a> name </a>
+                    </li-->
+                    <!--li>
+                        <a href="">
+                            name
                         </a>
-                    </li>
+                    </li-->
                     <li>
                         <a href="https://vi-lab-th.github.io/"> Thanapong Intharah </a>
                     </li>
@@ -65,37 +66,18 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <ul class="nav nav-pills nav-justified">
-                    <li>
-                        <a href="https://ieeexplore.ieee.org/abstract/document/10499663">
-                            <img src="./NeRV_files/paper.jpg" height="120px" /><br />
-                            <h4><strong>Paper</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=XcfcuMSpp90&feature=youtu.be">
-                            <img src="./NeRV_files/youtube_icon_dark.png" height="120px" /><br />
-                            <h4><strong>Presentation Video</strong></h4>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Peckkie/Concealed-Gun-Detector">
-                            <img src="./NeRV_files/github_pad.png" height="120px" /><br />
-                            <h4><strong>Code</strong></h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>Example Results: Webpage(Prototype)</h3>
+                <!--h3>Example Results: Webpage(Prototype)</h3-->
                 <hr>
-                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+                <div class="text-center">
+                    <div style="position: relative">
+                        <iframe align="center" width="100%" height="422"
+                            src="https://youtu.be/jiYJ1QXZK8c?si=WAy2JndcjJgAGRln" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                <!--video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
                     <source src="./NeRV_files/Gun2.mp4" type="video/mp4" />
-                </video>
+                </video-->
             </div>
         </div>
 
@@ -103,41 +85,104 @@
             <div class="col-md-8 col-md-offset-2">
                 <h3>Abstract</h3>
                 <hr>
-                <img src="./NeRV_files/Capture2.JPG" class="img-responsive" alt="overview" /><br />
+                <!--img src="./NeRV_files/Capture2.JPG" class="img-responsive" alt="overview" /-->
                 <p class="text-justify">
-                    &emsp;&emsp;&emsp;Nowadays, there are a lot of efforts to use
-                    intelligent algorithms to detect gun related incidents in CCTV.
-                    However, this approach cannot prevent the gun incidents before they
-                    happen. So, we present here an algorithm and the system which can
-                    detect people with concealed gun in order to early alarm before the
-                    incident happens.
-                    <br />&emsp;&emsp;&emsp;We develop the algorithm by first collecting
-                    videos of gun incidents from YouTube.com. We then prepare the
-                    dataset by dividing a video into 2 parts: the concealed gun part and
-                    the label part. After that, we use PoseFlow to track individual and
-                    train different learning algorithms on the dataset. The experiment
-                    shows that Random Forest outperforms Support Vector Machine,
-                    Decision Tree, Logistic Regression by having 77%, Accuracy, 76%
-                    Recall, 63% Precision and 69% F1-Score. <br />&emsp;&emsp;&emsp;For
-                    the system we develop API which detects concealed gun based on
-                    Random Forest algorithm. In order to demonstrate and debug the
-                    system, we also develop the Web Application that take a video as an
-                    input and output probabilities of having concealed gun for all
-                    people in the video. Moreover, when a subject with concealed gun is
-                    detected, the system sends Line notification to the pre-configured
-                    user.
+                    &emsp;&emsp;&emsp;Explainable AI (XAI) methods are crucial for understanding and validating 
+                    deep learning models, especially in high-stakes domains like medical imaging.
+                    However, interpreting the complex visual outputs of XAI techniques remains challenging.
+                    <br />&emsp;&emsp;&emsp;This paper introduces a novel XAI tool that combines YOLO object 
+                    detection with SHAP analysis to automatically identify anatomical regions influencing model decisions
+                    in panoramic dental X-rays. We apply our tool to age and sex estimation models trained on a 943
+                    Thai patient X-ray dataset. By aggregating results across images, we learn which dental structures are most 
+                    salient for different predictions. We validate our findings against existing dental research, 
+                    confirming known age and sex indicators and identifying potentially novel biomarkers.
+                    <br />&emsp;&emsp;&emsp;Our approach enables more interpretable and actionable XAI for medical imaging, 
+                    bridging the gap between model explanations and domain expertise.
+                    We demonstrate how XAI can explain individual predictions and discover generalizable insights to advance scientific
+                     understanding when applied systematically across datasets.
                 </p>
             </div>
         </div>
-        <!-- Awards!!!!!!!!!! -->
+
+       
+        <div class="row">
+            <br />
+            <br />
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10212499">
+                            <img src="./NeRV_files/cover_DeepTooth.png" height="180px" /><br />
+                            <h4><strong>Deep Tooth</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./NeRV_files/cover_DeepToothDuo.png" height="180px" /><br />
+                            <h4><strong>Deep Tooth Duo</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./NeRV_files/cover_OPG_SHAP.png" height="180px" /><br />
+                            <h4><strong>OPG SHAP</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BibTeX-->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <h3>Awards</h3>
+                <h3>BibTeX</h3>
                 <hr>
             </div>
         </div>
 
         <div class="row">
+            <div class="col-md-8 col-md-offset-2 ">
+                <div class="bibtex-entry">
+                    @INPROCEEDINGS{somdej2023deeptooth,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;title = {DeepTooth: Estimating Age and Gender with Panoramic Radiograph Image},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;author = {Somdej, Wanita and Thamvongsa, Athitiya and Hirunchavarod, Natthanich and Sributsayakarn, Natnicha and Pornprasertsuk-Damrongsri, Suchaya and Jirarattanasopha, Varangkanar and Intharah, Thanapong},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {2023 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;pages = {1--6},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;year = {2023},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;organization={IEEE}<br>
+                    }
+                </div>
+                <br>
+                <div class="bibtex-entry">
+                    @INPROCEEDINGS{hirunchavarod2024deepduo,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;title = {DeepToothDuo: Multi-task Age-Sex Estimation and Understanding via Panoramic Radiograph},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;author = {Hirunchavarod, N and Phuphatham, P and Sributsayakarn, N and Prathansap, N and Pornprasertsuk-Damrongsri, S and Jirarattanasopha, V and Intharah, T },<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {2024 IEEE 21st international symposium on biomedical imaging (ISBI 2024)},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;pages = {-},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;year = {2024},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;organization={IEEE}<br>
+                    }
+                </div>
+
+                <br>
+                <div class="bibtex-entry">
+                    @INPROCEEDINGS{hirunchavarod2024opgshap,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;title = {OPG-SHAP: A Dental AI Tool for Explaining Learned Orthopantomogram Image Recognition},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;author = {Hirunchavarod, N and Dangsungnoen, L and Thongprasant, K and  Phuphatham, P and Prathansap, N and Sributsayakarn, N and Pornprasertsuk-Damrongsri, S and Jirarattanasopha, V and Intharah, T },<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;booktitle = {2024 International Technical Conference on Circuits/Systems, Computers, and Communications (ITC-CSCC)},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;pages = {-},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;year = {2024},<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;organization={IEEE}<br>
+                    }
+                </div>
+            </div>
+        </div>
+            
+
+
+ 
+
+        <!--div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
@@ -159,11 +204,11 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div-->
 
         <!-- rrrrr -->
 
-        <div class="w3-content w3-display-container" style="max-width:700px; margin-top: 30px; margin-bottom: 30px;">
+        <!--div class="w3-content w3-display-container" style="max-width:700px; margin-top: 30px; margin-bottom: 30px;">
             <img class="mySlides" src="NeRV_files/IMG04.jpg" style="width:100%">
             <img class="mySlides" src="NeRV_files/IMG03.jpg" style="width:100%">
             <img class="mySlides" src="NeRV_files/IMG05.jpg" style="width:100%">
@@ -179,9 +224,9 @@
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
             </div>
-        </div>
+        </div-->
         <!-- rrrrr -->
-        <div class="row">
+        <!--div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>Presentation Video for Prime Minister's Digital Award 2020</h3>
                 <hr>
@@ -205,7 +250,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div-->
 
         <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -238,7 +283,7 @@
             </div>
         </div> -->
 
-        <div class="row">
+        <!--div class="row">
             <div class="col-md-8 col-md-offset-2"></div>
         </div>
         <div class="row">
@@ -249,7 +294,7 @@
                 <p></p>
             </div>
         </div>
-    </div>
+    </div-->
 
     <script>
         var slideIndex = 1;
